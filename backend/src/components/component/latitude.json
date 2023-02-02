@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_component_latitudes",
+  "info": {
+    "displayName": "latitude"
+  },
+  "options": {},
+  "attributes": {
+    "longitude": {
+      "type": "float"
+    }
+  }
+}

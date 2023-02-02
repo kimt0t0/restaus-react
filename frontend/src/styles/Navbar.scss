@@ -1,0 +1,21 @@
+@import './variables';
+@import './mixins';
+
+.navbar {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    background-color: $secondary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .navlink {
+        margin: 0 16px;
+        font-size: 1.15rem;
+        color: $background-color;
+        transition: text-decoration 400ms ease-out;
+        &:hover, &:focus {
+            text-decoration: none;
+        }
+    }
+}

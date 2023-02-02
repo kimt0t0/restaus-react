@@ -1,0 +1,6 @@
+@import './variables';
+@import './mixins';
+
+.list-ctn {
+    @include horizontal-list;
+}
