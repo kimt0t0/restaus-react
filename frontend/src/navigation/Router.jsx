@@ -3,6 +3,7 @@ import Home from '../pages/Home'
 import About from '../pages/About'
 import Restaurants from '../pages/Restaurants'
 import Restaurant from '../pages/Restaurant'
+import AddRestaurant from '../pages/AddRestaurant'
 
 function Router () {
   return (
@@ -10,9 +11,10 @@ function Router () {
       <Route index path='/' element={<Home />} />
       <Route path='/about' element={<About />} />
       <Route path='/restaurants' element={<Restaurants />} />
-      <Route path='/restaurant'>
+      <Route path='/add-restaurant' element={<AddRestaurant />} />
+      {/* <Route path='/restaurant'>
         <Route path=':slug' element={<Restaurant />} />
-      </Route>
+      </Route> */}
       <Route path='/restaurant'>
         <Route path=':id' element={<Restaurant />} />
       </Route>

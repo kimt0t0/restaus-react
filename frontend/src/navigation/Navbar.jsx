@@ -7,6 +7,7 @@ function Navbar () {
       <Link className='navlink' to='/'>Accueil</Link>
       <Link className='navlink' to='/about'>A propos</Link>
       <Link className='navlink' to='/restaurants'>Restaurants</Link>
+      <Link className='navlink' to='/add-restaurant'>Ajouter un restaurant</Link>
     </nav>
   )
 }

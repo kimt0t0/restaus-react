@@ -1,0 +1,7 @@
+@import './variables';
+@import './mixins';
+
+.ar-form {
+    display: flex;
+    flex-direction: column;
+}

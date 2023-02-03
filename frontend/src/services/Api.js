@@ -19,6 +19,37 @@ const getRestaurants = async () => {
   }
 }
 
+const getRestaurantById = async (id) => {
+  try {
+    const response = await api.get(`/restaurants/${id}?populate=*`)
+    return response.data
+  } catch (e) {
+    console.error(e)
+  }
+}
+
+const createRestaurant = async (formData) => {
+  try {
+    const _data = {
+      data: { // mettre un objet data dans la variable est spécifique au fonctionnement de Strapi
+        name: formData.name,
+        description: formData.description,
+        coordinates: {
+          latitude: Number(formData.latitude),
+          longitude: Number(formData.longitude)
+        }
+      }
+    }
+
+    const response = await api.post('/restaurants', _data)
+    return response.data
+  } catch (e) {
+    console.error(e)
+  }
+}
+
 export {
-  getRestaurants
+  getRestaurants,
+  getRestaurantById,
+  createRestaurant
 }
